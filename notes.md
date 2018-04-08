@@ -1,3 +1,4 @@
+# Notes
 ## Beginners Guide to Deep Learning
 - Machine learning has multiple uses
   - identify objects
@@ -5,3 +6,34 @@
   - match news items/posts/products w/user interests
   - select relevant search results
   - etc
+- Deep Learning (aka deep structured learning, deep machine learning)
+  - attempt to model high level abstractions in data
+  - simple case:
+    - 2 sets of neurons (input and output)
+    - input receives input and passes modified version to next layer
+    - final layer provides output of all modified inputs
+- generative deep architectures
+  - characterize high-order correlation properties of observed/visible data
+    good for pattern analysis/synthesis
+- discriminative deep architectures
+  - provide discriminative power for pattern classification
+  - do this by characterizing posterior distribuions of classes conditioned in the visible data
+- hybrid deep architectures
+  - goal is discrimintation
+  - assisted w/outcomes of generative architectures
+- deep learning architectures in use today
+  - deep feed-forward networks
+  - convolution networks
+  - recurrent networks
+- deep feed-forward networks (feed-forward neural networks, multilayer perceptrons)
+  - quintessential deep learning model
+  - goal is to approximate some function f*
+    - classifier y = f*(x) maps an input x to a category y
+    - feed-forward network defines a mappying y = f(x;0) and learns the value of the parameters 0 that result in the best function approximation
+  - simple terms:
+    - network defined as input, hidden and output nodes
+    - data comes in from input nodes
+    - processing is done in hidden nodes
+    - output produced through output nodes
+  - info flows through function being evaluated from x, through intermediate computations used to define f, finally to output y
+  - no feedback connections, model is not fed back into itself
